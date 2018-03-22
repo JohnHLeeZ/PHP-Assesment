@@ -5,7 +5,7 @@ class Thesaurus
     private $library;
     
     function Thesaurus()
-	{
+    {
        $this->library = array("buy" => array("purchase"), "big" => array("great", "large"));
     }
     
@@ -13,9 +13,8 @@ class Thesaurus
     {
        $wordArray = array("word"=> $word);
        $synonymArray = array("synonyms"=> (array_key_exists($word, $this->library)) ? $this->library[$word] : [] );
-       
-	   return json_encode($wordArray + $synonymArray);
-
+	    
+       return json_encode($wordArray + $synonymArray);
     }
 
 }
