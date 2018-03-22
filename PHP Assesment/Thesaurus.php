@@ -22,4 +22,5 @@ class Thesaurus
 
 $theSaurus = new Thesaurus;
 echo $theSaurus->getSynonyms("big");
+
 ?>
