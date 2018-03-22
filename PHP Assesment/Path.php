@@ -31,3 +31,5 @@ class Path
 $path = new Path('/a/b/c/d');
 $path->cd('../x');
 echo $path->currentPath;
+
+?>
