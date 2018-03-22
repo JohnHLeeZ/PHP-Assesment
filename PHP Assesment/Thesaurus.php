@@ -15,7 +15,6 @@ class Thesaurus
        $synonymArray = array("synonyms"=> (array_key_exists($word, $this->thesaurus)) ? $this->thesaurus[$word] : [] );
        
        return json_encode($wordArray + $synonymArray);
-
     }
 
 }
