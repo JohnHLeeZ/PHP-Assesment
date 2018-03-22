@@ -21,4 +21,5 @@ $files = [
 ];
 $fileOwners = new FileOwners;
 var_dump($fileOwners->groupByOwners($files));
+
 ?>
